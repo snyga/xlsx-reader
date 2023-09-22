@@ -12,10 +12,10 @@ pyinstaller_cmd = 'pyinstaller --noconfirm --onefile --console --hidden-import "
 abs_path = "C:/Users/SD38JP/OneDrive - Aalborg Universitet/Dokumenter/Basement/xlsx-reader/"
 program_path = abs_path + "challenges.py"
 dist = abs_path + "Basement Status"
-dist_path = f'--distpath {dist}'
+dist_path = f'--distpath "{dist}"'
 
 temp_dir = abs_path + 'temp'
-work_path = f'--workpath {temp_dir}'
+work_path = f'--workpath "{temp_dir}"'
 
 hidden_modules = ['openpyxl.cell._writer']
 hidden_import = combine_argument_and_argname('--hidden-import', hidden_modules)
@@ -23,23 +23,37 @@ hidden_import = combine_argument_and_argname('--hidden-import', hidden_modules)
 submodules = ['openpyxl']
 collect_submodules = combine_argument_and_argname('--collect-submodules', submodules)
 
-no_confirm = '-y'
+no_confirm = '--noconfirm'
 no_clutter = '--clean'
-one_file = '-F'
-one_dir = '-D'
+one_file = '--onefile'
+one_dir = '--onedir'
 console = '--console'
 
-'pyinstaller --noconfirm --onefile --clean --distpath "C:/Users/SD38JP/OneDrive - Aalborg Universitet/Dokumenter/Basement/xlsx-reader/Basement/" --console --hidden-import "openpyxl.cell._writer" --collect-submodules "openpyxl"  "C:/Users/SD38JP/OneDrive - Aalborg Universitet/Dokumenter/Basement/xlsx-reader/edit_status_0.2.py"'
+# 'pyinstaller --noconfirm --onefile --clean --distpath "C:/Users/SD38JP/OneDrive - Aalborg Universitet/Dokumenter/Basement/xlsx-reader/Basement/" --console --hidden-import "openpyxl.cell._writer" --collect-submodules "openpyxl"  "C:/Users/SD38JP/OneDrive - Aalborg Universitet/Dokumenter/Basement/xlsx-reader/edit_status_0.2.py"'
 
 py_to_exe = 'py/edit_status_0.2.py'
-py_to_exe_path = abs_path + py_to_exe
+py_to_exe_path = f'"{abs_path + py_to_exe}"'
 
 
-pyinstaller_cmd = 'pyinstaller' + ' '.join(['pyinstaller',
-                      no_confirm, one_file, no_clutter, console,
-                      dist_path,
+pyinstaller_cmd = 'pyinstaller ' + ' '.join([
+                      no_confirm, one_file, no_clutter, dist_path, console,
                       hidden_import, collect_submodules,
                       py_to_exe_path])
-# print(pyinstaller_cmd)
-print(subprocess.run([pyinstaller_cmd],shell=True, stdout=True))
+
+pyinstaller_args = ['pyinstaller',
+                      no_confirm, one_file, no_clutter, dist_path, console,
+                      hidden_import, collect_submodules,
+                      py_to_exe_path]
+
+print(pyinstaller_args)
+process = subprocess.run(pyinstaller_args, shell=True, stdout=True, stderr=True,
+                         input=b'Finished?', check=True)
+
+
+# process = subprocess.run(pyinstaller_cmd, shell=True, stdout=True, stderr=True,
+#                          input=b'Finished?', check=True)
+
+
+
+
 
