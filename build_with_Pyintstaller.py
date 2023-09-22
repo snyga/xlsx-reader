@@ -8,6 +8,8 @@ pyinstaller_cmd = 'pyinstaller --noconfirm --onefile --console --hidden-import "
 
 
 
+import PyInstaller
 
+print(dir(PyInstaller))
 
 

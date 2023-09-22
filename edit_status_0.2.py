@@ -212,9 +212,9 @@ def change_data_popup(data_row:list, header_data:list, table_key:str, headings:l
             print('Data_row_copy: \n')
             final_row = row_in_copy
             break
-        elif event == update_button:
-            change_index = values[table_key][0]
+        elif event == update_button:            
             if values[table_key]:
+                change_index = values[table_key][0]
                 changed_value = change_data_through_input(change_index, header_data, data_row)
                 data_row[change_index] = changed_value
                 window[table_key].update(values=merge_two_arrays(header_data, data_row))
