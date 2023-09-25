@@ -36,24 +36,30 @@ py_to_exe_path = f'"{abs_path + py_to_exe}"'
 
 
 pyinstaller_cmd = 'pyinstaller ' + ' '.join([
-                      no_confirm, one_file, no_clutter, dist_path, console,
-                      hidden_import, collect_submodules,
+                      no_confirm, 
+                    #   one_file, 
+                    #   no_clutter, 
+                    #   dist_path, 
+                    #   console,
+                    #   hidden_import, 
+                    #   collect_submodules,
                       py_to_exe_path])
 
 pyinstaller_args = ['pyinstaller',
-                      no_confirm, one_file, no_clutter, dist_path, console,
-                      hidden_import, collect_submodules,
-                      py_to_exe_path]
+                    #   no_confirm, 
+                    #   one_file, 
+                    #   no_clutter, 
+                    #   dist_path, 
+                    #   console,
+                    #   hidden_import, 
+                    #   collect_submodules,
+                        'edit_status_0.2.py'
+                    #   py_to_exe_path
+                      ]
 
 print(pyinstaller_args)
-process = subprocess.run(pyinstaller_args, shell=True, stdout=True, stderr=True,
-                         input=b'Finished?', check=True)
-
-
-# process = subprocess.run(pyinstaller_cmd, shell=True, stdout=True, stderr=True,
+# process = subprocess.run('pyinstaller.exe ".\hello_word.py"', shell=True, stdout=True, stderr=True,
 #                          input=b'Finished?', check=True)
 
-
-
-
-
+subprocess.run('pyinstaller -y -F --clean --distpath "C:/Users/SD38JP/OneDrive - Aalborg Universitet/Dokumenter/Basement/xlsx-reader/Basement Status" --console --hidden-import "openpyxl.cell._writer"  --collect-submodules "openpyxl"  "C:/Users/SD38JP/OneDrive - Aalborg Universitet/Dokumenter/Basement/xlsx-reader/py/edit_status_0.2.py"', 
+               stderr=True, stdout=True, check=True)

@@ -295,15 +295,15 @@ def data_dict_to_excel(data):
 def main_window(storage_path):
 
     how_to_text = """Select a filter in the box to the left and press 'Update filter'.\n
-    Find the entry you wish to either view or change and highlight it by click on it and press 'Select entry'.\n
-    This will open a new window where you can update the current values. Select a row and press 'Update entry', which opens yet another window.\n
-    Type in the new value and press 'Submit change'. This will update the previous window. Now press 'Save changes' to save and close the updating window.\n
-    In the primary window press 'Save and exit' to save the new data. If you do not wish to save you changes, press 'Exit without saving'.\n
-    To delete an entry select it and press 'Delete entry'.\n
+Find the entry you wish to either view or change and highlight it by click on it and press 'Select entry'.\n
+This will open a new window where you can update the current values. Select a row and press 'Update entry', which opens yet another window.\n
+Type in the new value and press 'Submit change'. This will update the previous window. Now press 'Save changes' to save and close the updating window.\n
+In the primary window press 'Save and exit' to save the new data. If you do not wish to save you changes, press 'Exit without saving'.\n
+To delete an entry select it and press 'Delete entry'.\n
     """
-    do_not_text = """Change the ID.
+    do_not_text = """**Change the ID.**
 
-    If you change its to an existing ID, it will OVERWRITE the chosen ID and CANNOT BE RESTORED!
+If you change its to an existing ID, it will OVERWRITE the chosen ID and CANNOT BE RESTORED!
     """
 
     sg.theme('DarkGrey')
@@ -422,7 +422,7 @@ def main_window(storage_path):
 #%%
 
 storage_path = 'polymer_storage_files'
-# storage_path = 'test_folder'
+storage_path = 'test_folder'
 global save_data
 save_data = [False, False]
 
