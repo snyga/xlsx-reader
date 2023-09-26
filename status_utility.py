@@ -1,8 +1,5 @@
-# from pandas import read_excel as pd_read_excel
-# from pandas import DataFrame
 from os import path as os_path
 from os import listdir, remove
-import PySimpleGUI as sg
 from time import strftime
 
 
