@@ -7,12 +7,15 @@ At the moment the xlsx had the need for the first header to be ' ID '. There mus
   * Go ahead and download the edit_status_0.2.exe and it should be ready to use. You need to place it next to a folder named `polymer_storage` to work.
 
 ## Install with PyInstaller (not windows): 
-* Download `edit_status_0.2.py` and place it in the same directory as your xlsx files. 
-  * Install PyInstaller with `pip install pyinstaller` [PyInstaller](https://pyinstaller.org/en/stable/).
-  * In your terminal run the following line: `pyinstaller --noconfirm --onefile --clean --distpath "C:/Users/username/Basement Status/polymer_storage/" --console --hidden-import "openpyxl.cell._writer" --collect-submodules "openpyxl"  "C:/Users/username/Basement Status/polymer_storage/edit_status_0.2.py"`
+* Download the repository and place it in the same directory as your xlsx files. 
+  * Install PyInstaller with `pip install pyinstaller` ([PyInstaller](https://pyinstaller.org/en/stable/)).
+  * In your terminal run `python build_with_PyInstaller.py` to replace the exe file in `Basement_Status`
 
 ### Requirements for installation
-PySimpleGUI and PyInstaller.
+[PySimpleGUI](https://www.pysimplegui.org/en/latest/#install) and [PyInstaller](https://pyinstaller.org/en/stable/).
+
+* `pip install -U pysimplegui`
+* `pip install PyInstaller`
 
 # Goals
 To make the GUI a lot more general so it can read any kind of xlsx based database. 
