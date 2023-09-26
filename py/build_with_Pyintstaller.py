@@ -29,8 +29,8 @@ one_file = '--onefile'
 one_dir = '--onedir'
 console = '--console'
 
-# 'pyinstaller --noconfirm --onefile --clean --distpath "C:/Users/SD38JP/OneDrive - Aalborg Universitet/Dokumenter/Basement/xlsx-reader/Basement/" --console --hidden-import "openpyxl.cell._writer" --collect-submodules "openpyxl"  "C:/Users/SD38JP/OneDrive - Aalborg Universitet/Dokumenter/Basement/xlsx-reader/edit_status_0.2.py"'
-
+# 'pyinstaller --noconfirm --onefile --clean --distpath "C:/Users/SD38JP/OneDrive - Aalborg Universitet/Dokumenter/Basement/xlsx-reader/Basement Status/polymer_storage/" --console --hidden-import "openpyxl.cell._writer" --collect-submodules "openpyxl"  "C:/Users/SD38JP/OneDrive - Aalborg Universitet/Dokumenter/Basement/xlsx-reader/py/edit_status_0.2.py"'
+# 'pyinstaller --noconfirm --onefile --clean --distpath "C:/Users/SD38JP/OneDrive - Aalborg Universitet/Dokumenter/Basement/xlsx-reader/Basement Status/polymer_storage/" --console "C:/Users/SD38JP/OneDrive - Aalborg Universitet/Dokumenter/Basement/xlsx-reader/py/edit_status_0.2.py"'
 py_to_exe = 'py/edit_status_0.2.py'
 py_to_exe_path = f'"{abs_path + py_to_exe}"'
 

@@ -1,0 +1,16 @@
+ ID ,Abbrev,Plastic Type,S,R,S.1,Container,Company/Producer,Contact/Group,Project,Sample bag,Compound/Additives,Sample,Batch,Treatment,Note,Shape,Date,Approximate mass,Unit
+1,PP,Polypropylene,C,3,5,Rasmus/Alexsey,,Rasmus Klitkou,,,"Moplen HP400R EX:1, 4% Dellite 67G, 2% PP-g-MA",EX:1,,"300 rpm, 180 deg C",,Tensile bars,2011-11-11 00:00:00,0.9,kg
+2,PP,Polypropylene,C,3,5,Rasmus/Alexsey,,Rasmus Klitkou,,,"Moplen HP400R EX:1, 4% Dellite 67G, 2% PP-g-MA",EX:1,,,,Tensile bars,2011-11-11 00:00:00,1.09,kg
+3,PP,Polypropylene,C,234235234KJUSGFLÆIUY,5,awl.eglawerflawyefawve ,,Rasmus Klitkou,,,"Moplen HP400R EX:1, 4% Dellite 67G, 2% PP-g-MA",EX:1,,200 deg C,,Tensile bars,2011-11-11 00:00:00,0.62,Liter
+4,PLA,Polylactic Acid,C,3,5,Rasmus/Alexsey,,Rasmus Klitkou,,,PLA (film intet),,,,,Tensile bars,2012-03-20 00:00:00,0.2,kg
+5,BL,Blend,C,asrasrawer,5,Rasmus/Alexsey,,Rasmus Klitkou,AWEARTFAWRERW,Neat blends,80%LDPE-20%mPP,Sample 11,,,qrqwe,Leftover,,0.8,kg
+6,BL,Blend,C,3,5,Rasmus/Alexsey,,Rasmus Klitkou,,Neat blends,40%LDPE-60%mPP,Sample 9,,,,Leftover,,0.02,kg
+7,BL,Blend,C,3,5,Rasmus/Alexsey,,Rasmus Klitkou,eawawe,Neat blends,20%LDPE-80%mPP,Sample 8,,,,Leftover,,0.9,kg
+8,BL,Blend,C,3,5,Rasmus/Alexsey,,Rasmus Klitkou,,Neat blends,60%LDPE-40%mPP,Sample 8,,,,Leftover,,0.1,kg
+9,mPP,Metallocene Polypropylene,C,awewarawt,5,Rasmus/Alexsey,,Rasmus Klitkou,,Neat blends,100%mPP,Sample 7,,,,Leftover,,0.15,kg
+10,aweawe,,,,,,aweraw,,,,,,,,,,,,
+11,,,,,,,aweaweaaw,,,,,,,,,,,,
+12,,,,,,,awraweawer,,,,,,,,,,,,
+13,,New Polymer,,,,,,aweawea,,,,,,,,,,,
+14,,,,,,aweawr,,,,,,,,,,,,,
+15,,,,,,,,,,,aweawe,,,,,,,,
