@@ -14,21 +14,21 @@ def import_or_install(package:str):
         __import__(package)
     except ImportError:
         subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
-    reqs = subprocess.check_output([sys.executable, '-m', 'pip', 'freeze'])
-    installed_packages = [r.decode().split('==')[0] for r in reqs.split()]
-    print(installed_packages)
-        
+        reqs = subprocess.check_output([sys.executable, '-m', 'pip', 'freeze'])
+        installed_packages = [r.decode().split('==')[0] for r in reqs.split()]
+        print(installed_packages)
+
+def combine_argument_and_argname(arg:str, argnames:list[str]) -> str:
+    return ''.join([f'{arg} ' + f'"{argname}"' + ' ' for argname in argnames])
+
 check_packages = {'PyInstaller':  {'install_line': 'pyinstaller', 'keywords': ['-U'] },
                   'PySimpleGUI': {'install_line': 'pysimplegui', 'keywords': []}
                   }
 
 for key, item in check_packages.items():
     package = item['install_line']
-    # keywords = item['keywords']
     import_or_install(package)
 
-def combine_argument_and_argname(arg:str, argnames:list[str]) -> str:
-    return ''.join([f'{arg} ' + f'"{argname}"' + ' ' for argname in argnames])
 
 abs_path = os.path.abspath('..') 
 script_name = '"\edit_status_0.3.py"'
