@@ -1,5 +1,5 @@
 # xlxs_reader
-Graphical User Interface (GUI) for a database written in excel (xlsx).
+Graphical User Interface (GUI) for a database written in csv.
 At the moment the xlsx had the need for the first header to be ' ID '. There must also be a header named 'Plastic Type'.
 
 # How to install
@@ -18,7 +18,7 @@ At the moment the xlsx had the need for the first header to be ' ID '. There mus
 * `pip install -U PyInstaller`
 
 # Goals
-To make the GUI a lot more general so it can read any kind of xlsx based database. 
+To make the GUI a lot more general so it can read any kind of xlsx based database.
 
 # License
 Licensed under MIT 3.0
