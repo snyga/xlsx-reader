@@ -14,8 +14,8 @@ At the moment the xlsx had the need for the first header to be ' ID '. There mus
 ### Requirements for installation
 [PySimpleGUI](https://www.pysimplegui.org/en/latest/#install) and [PyInstaller](https://pyinstaller.org/en/stable/).
 
-* `pip install -U pysimplegui`
-* `pip install PyInstaller`
+* `pip install pysimplegui`
+* `pip install -U PyInstaller`
 
 # Goals
 To make the GUI a lot more general so it can read any kind of xlsx based database. 
