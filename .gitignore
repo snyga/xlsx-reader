@@ -1,15 +1,11 @@
 # Folders
-
 */polymer_storage_files
 /output/polymer_storage_files
 /build
 /dist
 /output
 
-
 # Files
 build_with_Pyinstaller.py
 *.ps1
 *.7z
-
-utility.py
