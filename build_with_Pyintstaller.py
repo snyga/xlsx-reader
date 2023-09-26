@@ -74,3 +74,12 @@ for file in list_dir:
     if file.endswith('.spec'):
         os.remove(file)        
 
+
+
+## find ud af at omdanne filerne til et zipformat i stedet - 
+## 0: Download zipfil
+## 1: Åben zipfil
+## 2: Find den nyeste fil
+## 3: Lav eventuelle opdateringer
+## 4: Gem nyeste, slet ældste og zip det hele igen.
+## 5: Upload til 
