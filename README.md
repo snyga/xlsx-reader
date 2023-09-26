@@ -12,7 +12,7 @@ At the moment the xlsx had the need for the first header to be ' ID '. There mus
   * In your terminal run the following line: `pyinstaller --noconfirm --onefile --clean --distpath "C:/Users/username/Basement Status/polymer_storage/" --console --hidden-import "openpyxl.cell._writer" --collect-submodules "openpyxl"  "C:/Users/username/Basement Status/polymer_storage/edit_status_0.2.py"`
 
 ### Requirements for installation
-Pandas, PySimpleGUI, and PyInstaller.
+PySimpleGUI and PyInstaller.
 
 # Goals
 To make the GUI a lot more general so it can read any kind of xlsx based database. 
